@@ -1,0 +1,144 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f0f4ff;
+    color: #1f2937;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px #1e3a8a12;
+}
+
+body > .card {
+    width: min(420px, 92%);
+    margin: 70px auto;
+}
+
+.logo {
+    color: #3157d5;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #3157d5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2343ad;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.secondary {
+    background: #e8edff;
+    color: #2445b2;
+}
+
+#message {
+    overflow-wrap: anywhere;
+}
+
+.dashboard {
+    width: min(900px, 94%);
+    margin: 30px auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.topbar .logo {
+    margin: 0;
+}
+
+.topbar button {
+    width: auto;
+    margin: 0;
+}
+
+.welcome {
+    margin-bottom: 25px;
+}
+
+.upload-card {
+    margin-bottom: 25px;
+}
+
+.upload-card input {
+    margin-top: 12px;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 14px 0;
+    overflow-wrap: anywhere;
+}
+
+.file-item a {
+    color: #3157d5;
+}
+
+@media (max-width: 480px) {
+    body > .card {
+        margin: 35px auto;
+        padding: 22px;
+    }
+
+    .dashboard {
+        margin: 18px auto;
+    }
+}

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Details Form</h2>
+
+        <form id="detailsForm">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="email" id="studentEmail" placeholder="Enter your email" required>
+            <input type="number" id="age" placeholder="Enter your age" min="1" required>
+            <input type="text" id="department" placeholder="Enter your department" required>
+
+            <button type="submit">Save Details</button>
+        </form>
+
+        <p id="message"></p>
+        <button type="button" id="logoutBtn">Logout</button>
+    </div>
+
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>
